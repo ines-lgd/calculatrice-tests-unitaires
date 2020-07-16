@@ -3,16 +3,13 @@ require_once('vendor/autoload.php');
 
 $climate = new League\CLImate\CLImate;
 
-use Ipssi\Evaluation\Addition;
-use Ipssi\Evaluation\Soustraction;
-use Ipssi\Evaluation\Multiplication;
-use Ipssi\Evaluation\Division;
+use Ipssi\Evaluation\Calculatrice;
 
-$add1 = new Addition(75,10);
-$sou1 = new Soustraction(0,128);
-$multi1 = new Multiplication(15,18);
-$div1 = new Division(15,30);
-$div0 = new Division(15,0);
+$add1 = new Calculatrice(75,10, addition);
+$sou1 = new Calculatrice(0,128, soustraction);
+$multi1 = new Calculatrice(15,18, multiplication);
+$div1 = new Calculatrice(15,30, division);
+$div0 = new Calculatrice(15,0, division);
 
 echo PHP_EOL . PHP_EOL;
 echo "Affichage du document" . PHP_EOL;
