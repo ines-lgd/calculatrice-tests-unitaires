@@ -1,6 +1,6 @@
 <?php
 
-namespace Ipssi\Evaluation;
+namespace App;
 
 require_once('vendor/autoload.php');
 

@@ -1,10 +1,13 @@
 {
     "require": {
-        "league/climate": "^3.5"
+        "league/climate": "^3.5",
+        "phpunit/phpunit": "^9.1"
     },
     "autoload": {
         "psr-4": {
-            "Ipssi\\Evaluation\\" : "src/"
+            "App\\" : "src/",
+            "Test\\": "tests/",
+            "Mock\\": "mock/"
         }
     }
 }
